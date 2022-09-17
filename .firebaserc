@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firestore-project-71872": {
+      "hosting": {
+        "firestore": [
+          "firestore-project-71872"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firestore-project-71872"
+  }
+}
