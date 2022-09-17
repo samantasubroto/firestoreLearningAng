@@ -16,6 +16,10 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "strictFunctionTypes": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noPropertyAccessFromIndexSignature": false,
     "target": "es2017",
     "module": "es2020",
     "lib": [

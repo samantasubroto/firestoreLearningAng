@@ -14,6 +14,10 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { LoginModule } from 'src/components/login/login.module';
+import { SignUpModule } from 'src/components/sign-up/sign-up.module';
+import { RouterLink } from '@angular/router';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     provideMessaging(() => getMessaging()),
     providePerformance(() => getPerformance()),
     provideRemoteConfig(() => getRemoteConfig()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    SignUpModule,
+    LoginModule,
+    HotToastModule.forRoot(),
   ],
   providers: [
     ScreenTrackingService,UserTrackingService
